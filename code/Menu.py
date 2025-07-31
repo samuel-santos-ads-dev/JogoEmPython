@@ -6,7 +6,7 @@ from code.Const import COLOR_ORANGE, COLOR_WHITE, COLOR_YELLOW, MENU_OPTION, TEL
 class Menu:
     def __init__(self, tela):
         self.tela = tela
-        self.surf = pygame.image.load('./asset/MenuBg.png')
+        self.surf = pygame.image.load('./asset/MenuBg.png').convert_alpha()
         self.rect = self.surf.get_rect(left = 0, top = 0)
 
     def run(self, ):
